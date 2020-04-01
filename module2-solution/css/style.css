@@ -14,12 +14,13 @@ body {
 /* Style for h1 */
 h1 {
     text-align: center;
-    color: white;
+    color: black;
+    font-family: Stencil, Helvetica, sans-serif;
+    font-size: 1.75em;
 }
 
 /* Adding Sytlye to paragraphs */
 p {
-    border: 0px;
     background-color: rgb(153, 13, 0);
     width: 90%;
     height: 150px;
@@ -28,26 +29,52 @@ p {
 
 /* Class for the Subtite in each box*/
 .subtitle {
+    font-family: Stencil, Helvetica, sans-serif;
+    font-size: 1.25em;
     background-color: pink;
-    border: 2px solid black;
+    border: 1px solid black;
     height: 2em;
-    padding: 0;
+    padding: .5em;
     margin: 0px;
     text-align: center;
     /* push it the the right side, auto with of the dev container*/
     float: right;
-    width: 30%;
+    width: 125px;
     /* Ensure it pushed the rest of the content down */
     clear: left;
 }
 
+#subtitle-1 {
+    background-color: orange;
+}
+
+#subtitle-2 {
+    background-color: pink;
+}
+
+#subtitle-3 {
+    background-color: lightblue;
+}
 
 /* Adding style to specific ID for a paragrah */
 .menu-box {
     text-align: left;
     /* TODO This is making maging for the text but is also making my subtitle have margin, we do not want that.*/
-    margin: 5px;
+    margin: 10px;
     float: left;
+    border: 1px solid black;
+    background-color: rgb(153, 13, 0);
+}
+
+/* Adding style for content box*/
+.content-box {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: left;
+    float:  left;
+    border: 0px;
+    margin-left: 15px;
+    padding: 5px;
 }
 
 /* Simple Responsive Framework */
@@ -62,8 +89,6 @@ p {
     /* Style for all columns */
     .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
         float: left;
-        border: 5px solid green;
-        background-color: rgb(153, 13, 0);
     }
     .col-lg-1 {
         width: 8.33%;
@@ -106,8 +131,7 @@ p {
   /********** Tablet devices 768px to 991px **********/
   @media (min-width: 768px) and (max-width: 991px) {
     .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-      float: left;
-      border: 1px solid green;
+        float: left;
     }
     .col-md-1 {
       width: 8.33%;
