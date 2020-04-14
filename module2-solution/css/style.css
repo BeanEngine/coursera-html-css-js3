@@ -32,7 +32,8 @@ p {
     font-family: Stencil, Helvetica, sans-serif;
     font-size: 1.25em;
     background-color: pink;
-    border: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
     height: 2em;
     padding: .5em;
     margin: 0px;
